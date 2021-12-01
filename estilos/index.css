@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+.container {
+    min-width: 350px;
+    padding: 18px;
+}
+.container > .card {
+    width: 340px;
+    height: 250px;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: brown;
+}
+.container .card .imgContainer {
+    height: 20%;
+    text-align: right;
+    opacity: 0.9;
+}
+.container > .card > .mainCard {
+    position: relative;
+    height: 80%;
+    padding: 2rem;
+    border: solid 2px white;
+    border-radius: 1rem;
+    color: white;
+    background-color:   hsl(235, 46%, 20%);
+}
+.container > .card > .mainCard h2 {
+    font: normal 18px Rubik;
+}
+.container .Work {
+    background-color: hsl(15, 100%, 70%);
+}
+.container .Play {
+    background-color: hsl(195, 74%, 62%);
+}
+.container .Study {
+    background-color: hsl(348, 100%, 68%);
+}
+.container .Exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+.container .Social {
+    background-color: hsl(264, 64%, 52%);
+}
+.container .SelfCare {
+    background-color: hsl(43, 84%, 65%);
+}
+@media (min-width: 950px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    .container .card {
+        width: 250px;
+    }
+}
