@@ -43,6 +43,9 @@ body {
     border: solid 2px white;
     background-color:   hsl(235, 46%, 20%);
 }
+.container > .card > .mainCard:hover {
+    background-color: hsl(236, 20%, 52%);
+}
 .container > .card > .mainCard h2 {
     font-size: 18px;
 }
@@ -66,7 +69,6 @@ body {
 
 .container .Perfil .infoPerfil {
     max-height: 200px;
-    height: 80%;
     border-radius: 1rem;
     padding: 25px;
     display: grid;
@@ -142,50 +144,72 @@ body {
 }
 @media (min-width: 950px) {
     .container {
+        position: absolute;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        width: fit-content;
+        gap: 15px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .container .card {
+    .container > .card {
         width: 250px;
+        height: 250px;
+        border-radius: 1rem;
+        margin: auto;
+        
     }
     .container .Perfil {
         grid-column: 1;
         grid-row: 1/3;
-        max-height: 100%;
         height: 100%;
-
-    }
-    .Perfil .infoPerfil {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        
+        grid-template-rows: 6fr 2fr;
     }
-
-
-    .container .Perfil .containerImgPerfil{
-        grid-column: 1;
-        grid-row: 1;
+    .container .Perfil .infoPerfil {
+        min-height: 0;
+        max-height: none;
+        grid-template-rows: 1fr 2fr;
+    }
+    .container .Perfil .infoPerfil .containerImgPerfil {
+        width: 80px;
+        height: 80px;
     }
     .Perfil .infoPerfil > span {
         grid-row: 2;
-        grid-column: 1;
-        line-height: normal;
+        grid-column: 1/3;
+        line-height: 40px;
+        font-size: 12px;
+        padding-left: 0px;
     }
     .Perfil .infoPerfil > h1 {
-        font: normal 15px 'Rubik', sans-serif;
-        grid-row: 3;
-        grid-column: 1;
+        font: normal 40px 'Rubik', sans-serif;
+        grid-row: 2;
+        grid-column: 1/3;
         position: relative;
-        top: 55px;
-        padding-left: 15px;
+        top: 50px;
+        line-height: 50px;
+        padding-left: 0px;
     }
-
-
-
+    .mainCard > p {
+        line-height: 35px;
+    }
+    .lastWeek {
+        font-size: 12px;
+        line-height: 45px;
+    }
     .Perfil .dailyWeeklyMonthly {
-        display: inline;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Perfil .dailyWeeklyMonthly span {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        padding-left: 25px;
     }
 }
 
