@@ -1,0 +1,64 @@
+
+.container > .card {
+    width: 320px;
+    height: 250px;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: brown;
+}
+.container .Perfil {
+    grid-row: 1/2;
+    grid-column: 1;
+}
+.container .card .imgContainer {
+    height: 20%;
+    text-align: right;
+    opacity: 0.9;
+}
+
+.container > .card > .mainCard {
+    position: relative;
+    height: 80%;
+    padding: 2rem;
+    border: solid 2px white;
+    border-radius: 1rem;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+    background-color:   hsl(235, 46%, 20%);
+}
+.container > .card > .mainCard h2 {
+    font-size: 18px;
+}
+.dots {
+    font-size: 30px;
+    margin-left: auto;
+    line-height: 0px;
+}
+.container > .card > .mainCard p {
+    font-size: 35px;
+}
+.lastWeek {
+    grid-row: 3;
+}
+
+.container .Work {
+    background-color: hsl(15, 100%, 70%);
+}
+.container .Play {
+    background-color: hsl(195, 74%, 62%);
+}
+.container .Study {
+    background-color: hsl(348, 100%, 68%);
+}
+.container .Exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+.container .Social {
+    background-color: hsl(264, 64%, 52%);
+}
+.container .SelfCare {
+    background-color: hsl(43, 84%, 65%);
+}
